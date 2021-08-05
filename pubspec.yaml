@@ -1,7 +1,7 @@
 name: lib_msaadev
 description: my first custom package to write codes easily
 version: 0.0.1
-homepage:
+homepage: https://github.com/msaadev/lib_msaadev
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -20,4 +20,3 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
-
