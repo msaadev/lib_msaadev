@@ -26,7 +26,7 @@ extension CustomDuration on num {
   Duration get hoursDuration => Duration(hours: this as int);
 }
 
-extension ListExtension on List<double?> {
+extension ListExtension on List {
   EdgeInsets get paddingSymmetric => EdgeInsets.symmetric(
       vertical: this[0] ?? 0, horizontal: this[1] ?? 0);
   String get image =>
