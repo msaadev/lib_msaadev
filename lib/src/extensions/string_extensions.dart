@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:lib_msaadev/src/constants/input_formatter_constants.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -14,7 +15,11 @@ extension NetworkImageExtension on String {
 }
 
 extension ParseString on String {
-   get decode => json.decode(this);
+ Map get decode => json.decode(this);
+}
+
+extension LocaleString on String {
+  get locale => this.tr();
 }
 
 extension StringValidatorExtension on String {
