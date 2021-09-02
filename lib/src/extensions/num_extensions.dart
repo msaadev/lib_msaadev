@@ -28,7 +28,7 @@ extension CustomDuration on num {
 
 extension ListExtension on List {
   EdgeInsets get paddingSymmetric => EdgeInsets.symmetric(
-      vertical: this[0] ?? 0, horizontal: this[1] ?? 0);
+     vertical: this[0].toDouble() ?? 0.0, horizontal: this[1].toDouble() ?? 0.0);
   String get image =>
       'https://picsum.photos/${this[0] ?? 480}/${this[1] ?? 270}';
   // EdgeInsets.symmetric(vertical: this[0].toDouble() ?? 0,horizontal: this[1].toDouble() ?? 0);
