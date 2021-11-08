@@ -12,11 +12,11 @@ extension FutureExtension on Future {
         if (s.hasData) {
           return child(s.data);
         } else if (s.hasError) {
-          return errorWidget ?? Center(
+          return errorWidget ?? const Center(
             child: Text('Hata Lütfen Tekrar Deneyiniz'),
           );
         } else {
-          return loadingWidget ?? Center(
+          return loadingWidget ?? const Center(
             child: CircularProgressIndicator(),
           );
         }

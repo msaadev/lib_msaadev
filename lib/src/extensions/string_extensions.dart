@@ -33,7 +33,7 @@ extension StringValidatorExtension on String {
 extension LaunchExtension on String {
   Future<bool> get launchEmail => launch('mailto:$this');
   Future<bool> get launchPhone => launch('tel:$this');
-  Future<bool> get launchWebsite => launch('$this');
+  Future<bool> get launchWebsite => launch(this);
 }
 
 extension ShareText on String {

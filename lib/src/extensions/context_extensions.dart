@@ -58,11 +58,6 @@ extension PageExtension on BuildContext {
   Color get randomColor => Colors.primaries[17.random];
 }
 
-extension DurationExtension on BuildContext {
-  Duration get lowDuration => Duration(milliseconds: 500);
-  Duration get normalDuration => Duration(seconds: 1);
-}
-
 extension NavigationExtension on BuildContext {
   NavigatorState get navigation => Navigator.of(this);
 

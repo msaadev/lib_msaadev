@@ -3,6 +3,14 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 extension CustomPaddingAll on num {
+  
+  EdgeInsets get paddingAll5 => const EdgeInsets.all(5);
+  EdgeInsets get paddingAll10 => const EdgeInsets.all(10);
+  EdgeInsets get paddingVertical5 => const EdgeInsets.symmetric(vertical:5);
+  EdgeInsets get paddingVertical10 => const EdgeInsets.symmetric(vertical:10);
+  EdgeInsets get paddingHorizontal5 => const EdgeInsets.symmetric(horizontal:5);
+  EdgeInsets get paddingHorizontal10 => const EdgeInsets.symmetric(horizontal:10);
+  EdgeInsets get paddingSymmetric10to5 => const EdgeInsets.symmetric(horizontal:10,vertical: 10);
   EdgeInsets get paddingAll => EdgeInsets.all(toDouble());
   EdgeInsets get paddingSymmetricVertical =>
       EdgeInsets.symmetric(vertical: toDouble());
@@ -24,6 +32,18 @@ extension CustomDuration on num {
   Duration get microsecondsDuration => Duration(microseconds: this as int);
   Duration get minutesDuration => Duration(minutes: this as int);
   Duration get hoursDuration => Duration(hours: this as int);
+  Duration get secondDuration1 => const Duration(seconds: 1);
+  Duration get secondDuration2 => const Duration(seconds: 2);
+  Duration get millisecondDuration500 => const Duration(milliseconds: 500);
+}
+
+extension DurationExtension on BuildContext {
+  Duration get millisecond500 => const Duration(milliseconds: 500);
+  Duration get millisecond200 => const Duration(milliseconds: 200);
+  Duration get millisecond250 => const Duration(milliseconds: 250);
+  Duration get millisecond300 => const Duration(milliseconds: 300);
+  Duration get second1 => const Duration(seconds: 1);
+  Duration get second2 => const Duration(seconds: 2);
 }
 
 extension ListExtension on List {
